@@ -1,0 +1,106 @@
+.page-body {
+  padding-bottom: 1rem;
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  background-color: #EEF2FD;
+}
+.detail {
+  margin: auto;
+  padding: .14rem .08rem;
+  width: 3.15rem;
+  height: .68rem;
+  border-radius: 8px;
+  background-color: #ECF1FE;
+  font-size: .14rem;
+  color: #333;
+  line-height: 20px;
+  span {
+    font-size: .14rem;
+    color: #4475FD;
+  }
+}
+.title-blue {
+  padding: .25rem 0;
+  text-align: center;
+  h3 {
+    font-size: .14rem;
+    color: #4475FD;
+  }
+  p.line {
+    margin: .25rem auto 0;
+    width: .32rem;
+    height: .02rem;
+    background-color: #DAE3FF;
+  }
+}
+
+.car-sell {
+  margin-top: -0.25rem;
+  height: 5rem;
+  .sell-top-province {
+    position: absolute;
+    top: 2.7rem;
+    left:.15rem;
+    h6 {
+      margin-bottom: .09rem;
+      color: #aaa;
+      font-size: .12rem;
+    }
+    p {
+      margin-bottom: .2rem;
+      span {
+        font-size: 12px;
+        &.order {
+          color: #FFBC53;
+          font-weight: bold;
+        }
+        &.province {
+          margin: 0 .27rem 0 .1rem;
+          color: #333;
+        }
+        &.num {
+          color: #4475FD;
+        }
+      }
+    }
+  }
+  .detail {
+    transform: translateY(-.62rem);
+  }
+}
+.brands-sell {
+  padding-bottom: .16rem;
+  .table {
+    margin: auto;
+    border-collapse:collapse;
+    outline: 1px solid #eee;
+    tr:nth-child(odd) {
+      background-color: #F7F7F8;
+    }
+    td {
+      padding-left: .15rem;
+      width: .79rem;
+      height: .4rem;
+      font-size: .12rem;
+      color: #666;
+      &:first-child {
+        color: #333;
+      }
+    }
+  }
+  .icon {
+    position: absolute;
+    top: .83rem;
+    width: .21rem;
+    &.icon1 {
+      left: 1.11rem;
+    }
+    &.icon2 {
+      left: 1.95rem;
+    }
+    &.icon3 {
+      left: 2.79rem;
+    }
+  }
+}

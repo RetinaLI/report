@@ -1,0 +1,45 @@
+<div class="page-body">
+  <app-top-nav [bannerInfo]="bannerInfo"></app-top-nav>
+  <div class="part car-sell">
+    <app-part-title [partName]="parts.part1.partName" [partNum]="parts.part1.partNum"></app-part-title>
+    <app-map [IMapData]="IMapData"></app-map>
+    <div class="sell-top-province">
+      <h6>销量最高地区排行TOP3</h6>
+      <p *ngFor="let v of IMapData; let i = index">
+        <span class="order">{{i + 1}}</span>
+        <span class="province">{{v.name}}</span>
+        <span class="num">{{v.value}}</span>
+      </p>
+    </div>
+    <div class="detail">
+      本周总销量为<span>{{totalSales}}辆</span>车，其中销量最多的地区是{{IMapData[0].name}},实销<span>{{IMapData[0].value}}辆</span>
+    </div>
+  </div>
+  <div class="part brands-sell">
+    <div class="title-blue">
+      <h3>各品牌车辆销售TOP3</h3>
+      <p class="line"></p>
+    </div>
+    <table class="table">
+      <tr>
+        <td>品牌</td>
+        <td class="font-color-FFBC53">top1</td>
+        <td class="font-color-FFBC53">top2</td>
+        <td class="font-color-FFBC53">top3</td>
+      </tr>
+      <tr *ngFor="let v of ObjectKeys(brandSellProvinceOrder)">
+        <td>{{v}}</td>
+        <td>{{brandSellProvinceOrder[v][0]}}</td>
+        <td>{{brandSellProvinceOrder[v][1]}}</td>
+        <td>{{brandSellProvinceOrder[v][2]}}</td>
+      </tr>
+    </table>
+    <img src="../../../assets/images/icon-top1.png" alt="" class="icon1 icon">
+    <img src="../../../assets/images/icon-top2.png" alt="" class="icon2 icon">
+    <img src="../../../assets/images/icon-top3.png" alt="" class="icon3 icon">
+  </div>
+  <div class="part repertory">
+      <app-part-title [partNum]="parts.part2.partNum" [partName]="parts.part2.partName"></app-part-title>
+  </div>
+</div>
+

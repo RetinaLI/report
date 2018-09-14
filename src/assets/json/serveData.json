@@ -1,0 +1,26 @@
+{
+  "data": {
+    "title": "服务大数据周报",
+    "platform": "福田车联网平台",
+    "startDate": "2018.9.10",
+    "endDate": "2018.9.16",
+    "totalSales": 2289,
+    "enterInfo": {
+      "enterTotalNum": 32,
+      "carNum": 3561,
+      "avgEnterTime": 9258
+    },
+    "brandCarEnterTotal": [
+      {"brandName":"欧曼", "enterTotalNum":3200, "carNum": 2553, "avgEnterTime":96},
+      {"brandName":"时代", "enterTotalNum":3102, "carNum": 1828, "avgEnterTime":52},
+      {"brandName":"欧马可", "enterTotalNum":2259, "carNum": 1653, "avgEnterTime":83},
+      {"brandName":"奥铃", "enterTotalNum":2019, "carNum": 1205, "avgEnterTime":66},
+      {"brandName":"其他", "enterTotalNum":1980, "carNum": 1008, "avgEnterTime":39}
+    ],
+    "trueScale": [
+      {"value":335, "name":"真实"},
+      {"value":310, "name":"不真实"},
+      {"value":100, "name":"无法判断"}
+    ]
+  }
+}

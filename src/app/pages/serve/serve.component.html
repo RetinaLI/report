@@ -1,0 +1,53 @@
+<div class="page-body">
+  <app-top-nav [bannerInfo]="bannerInfo"></app-top-nav>
+  <!-- 进站统计 -->
+  <div class="part enter-total">
+    <app-part-title [partName]="parts.part1.partName" [partNum]="parts.part1.partNum"></app-part-title>
+    <div class="totle-info">
+      <div>
+        <p class="title">进站总次数</p>
+        <span>{{ parts.part1.enterInfo.enterTotalNum }}</span>
+      </div>
+      <div>
+        <p class="title">涉及车辆数</p>
+        <span>{{ parts.part1.enterInfo.carNum }}</span>
+      </div>
+      <div>
+        <p class="title">平均进站时长(h)</p>
+        <span>{{ parts.part1.enterInfo.avgEnterTime }}</span>
+      </div>
+    </div>
+    <div class="title-blue">
+      <h3>各品牌进站车辆</h3>
+      <p class="line"></p>
+    </div>
+    <table class="table">
+      <tr>
+        <td width='30'>品牌</td>
+        <td width='60'>进站总次数</td>
+        <td width='60'>涉及车辆数</td>
+        <td width='88'>平均进站时长(h)</td>
+      </tr>
+      <tr *ngFor="let item of parts.part1.brandCarEnterTotal">
+        <td>{{ item.brandName }}</td>
+        <td>{{ item.enterTotalNum }}</td>
+        <td>{{ item.carNum }}</td>
+        <td>{{ item.avgEnterTime }}</td>
+      </tr>
+    </table>
+  </div>
+  <!-- 服务真实性 -->
+  <div class="part serve-facticity">
+    <app-part-title [partName]="parts.part2.partName" [partNum]="parts.part2.partNum"></app-part-title>
+    <app-pie [IPieData]="this.parts.part2.trueScale"></app-pie>
+    <ul class="facticity-nums clearfix">
+      <li>
+        <img src="" alt="">
+        <div>
+          <div class="title"></div>
+          <span></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

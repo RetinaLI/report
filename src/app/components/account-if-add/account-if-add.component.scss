@@ -1,0 +1,27 @@
+.totle-info {
+  display: flex;
+  display: -webkit-flex;
+  margin: auto;
+  padding: .15rem .16rem 0;
+  text-align: center;
+  & > div {
+      width: .9rem;
+      margin-left: .2rem;
+      &:first-child {
+          margin-left: 0;
+      }
+  }
+  p {
+    margin-bottom: .06rem;
+    color: #666;
+    font-size: .12rem;
+    line-height: .18rem;
+    opacity: 0.5;
+  }
+  span {
+    color: #4475FD;
+    font-size: .32rem;
+    font-weight: bold;
+    line-height: .37rem;
+  }
+}

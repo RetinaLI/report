@@ -1,0 +1,56 @@
+.top-nav {
+  position: relative;
+  width: 100%;
+  height: 2.2rem;
+  background-color: #eee;
+  background-size: cover;
+  &.sell-report {
+    background: url('../../../assets/images/sell-report-banner.png') center center no-repeat;
+    background-size: 100% auto;
+  }
+  &.serve {
+    background: url('../../../assets/images/serve/banner-serve.png') center center no-repeat;
+    background-size: 100% auto;
+    .txt .title {
+      color: #272727;
+    }
+  }
+  &.logistic-report {
+    background: url('../../../assets/images/logistic/banner@2x.png') center center no-repeat;
+    background-size: 100% auto;
+    .txt {
+      .platform {
+        color: #91FF90;
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    top: .15rem;
+    left: .15rem;
+    width: .6rem;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .txt {
+    left: .37rem;
+    text-align: left;
+    color: #fff;
+    .platform {
+      font-size: .18rem;
+    }
+    .title {
+      margin-top: .07rem;
+      font-size: .24rem;
+      font-weight: bold;
+      line-height: .24rem;
+    }
+    .date {
+      margin-top: .09rem;
+      font-size: .12rem;
+      line-height: .14rem;
+    }
+  }
+}
